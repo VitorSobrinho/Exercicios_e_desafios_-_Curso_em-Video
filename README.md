@@ -1,2 +1,4 @@
-# Exercicios_e_desafios_-_Curso_em-Video
-Portifólio com exercícios oriundos de cursos feitos no site https://www.cursoemvideo.com/
+### Exercicios_e_desafios_-_Curso_em-Video
+
+Repositório público com códigos e desafios, oriundos dos cursos realizados no [Curso em Vídeo](https://www.cursoemvideo.com/)
+
