@@ -1,11 +1,13 @@
 body{
     background: rgb(70, 142, 235);
     font: normal 15pt Arial;
+    /*Estilo do corpo em geral*/
 }
 
 header {
     color: white;
     text-align: center;
+    /*Estilo do título*/
 }
 
 section {
@@ -15,10 +17,12 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.363)
+    /*Estilo da área section, que compreende algumas informaçãoes a respeito da área de principal do site, que será visualizado pelo usuário*/
 }
 
 select#flista {
     width: 150px;
+    /*Estilo da caixa de texto, no qual é exibido os números que já foram adicionados*/
 }
 
 footer {
@@ -26,4 +30,5 @@ footer {
     text-align: center;
     font-style: italic;
     font-size: 13px;
+    /*Estilo do rodapé do site*/
 }
