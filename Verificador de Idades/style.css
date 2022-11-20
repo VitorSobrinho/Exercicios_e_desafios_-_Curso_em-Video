@@ -1,4 +1,4 @@
-body {
+        body {
     background: rgb(70, 142, 236);
     font: normal 15pt Arial;
 }
@@ -26,4 +26,5 @@ footer {
     color: white;
     text-align: center;
     font-style: italic;
+    font-size: 13px;
 }
