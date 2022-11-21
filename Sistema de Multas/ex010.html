@@ -5,57 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Multas</title>
-    <style>
-        div#res {
-            margin-top: 20px;
-        }
-        /*Aumentar a margem da primeira e da segunda frase*/
-
-
-    </style> 
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
-     <input type="button" value="Verificar" onclick="calcular()"> 
-     <!--Função do que será feito, após clicar no botão calcular com um clique-->
+    <header>
+        <h1>Será que o carro será multado?</h1>
+    </header>
+
+    <section>
+        <p>
+            Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+        </p>
+    
+        <p>
+            <input type="button" value="Verificar" onclick="calcular()"></p> 
+            <!--Função do que será feito, após clicar no botão calcular com um clique-->
 
 
-     <div id="res"></div> 
-     <!--O resultado do cálculo será exibido, após o cálculo em JS-->
+            <div id="res">
+
+            </div> 
+            <!--O resultado do cálculo será exibido, após o cálculo em JS-->
 
 
-     <script>
+            <script>
 
-        function calcular () { 
-            //Essa função será a responsável pela exibição das mensagens, após o clique em "verificar"
+                function calcular () { 
+                //Essa função será a responsável pela exibição das mensagens, após o clique em "verificar"
 
             
-            var txtv= window.document.querySelector('input#txtvel') 
-            //Vai pegar a primeira informação que é a velocidade digitada, na parte HTML
+                var txtv= window.document.querySelector('input#txtvel') 
+                //Vai pegar a primeira informação que é a velocidade digitada, na parte HTML
 
             
-            var res = window.document.querySelector('div#res') 
+                var res = window.document.querySelector('div#res') 
             
-            var vel = Number(txtv.value)
-            //Por mais que em HTML, o dado seja um número, em JS será "puxado" como uma string, por isso a necessidade de "transformar" me número
+                var vel = Number(txtv.value)
+                //Por mais que em HTML, o dado seja um número, em JS será "puxado" como uma string, por isso a necessidade de "transformar" me número
 
             
-            res.innerHTML = `Sua velocidade atual é de <strong>${vel}Km/h </strong>`
-            //Texto exibido independente do valor a ser colocado.
+                res.innerHTML = `Sua velocidade atual é de <strong>${vel}Km/h </strong>`
+                //Texto exibido independente do valor a ser colocado.
 
 
-            if (vel >60) {
+                if (vel >60) {
                 //Se a variável vel foi maior que 60, vai ser exibido esta mensagem:
 
 
-                res.innerHTML += `<p>Você está <strong>MULTADO!</strong> por excesso de velocidade</p>`
+                res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade</p>`
+                }
+
+                res.innerHTML += `<p>Dirija sempre com cinto de segurança! </p>`
+                //Texto exibido independente do valor a ser colocado.
+
             }
 
-            res.innerHTML += `<p>Dirija sempre com cinto de segurança! </p>`
-            //Texto exibido independente do valor a ser colocado.
+            </script>
 
-        }
+    </section>
 
-     </script>
+<footer>
+    <p>
+        &copy; Site desenvolvido e criado por <a href="https://www.cursoemvideo.com/" target="_blank">CursoemVideo</a> e editado por mim: <a href="https://www.linkedin.com/in/vhyctorugo/">Vitor Sobrinho</a>
+    </p>
+</footer>
+
+<!--Rodapé com informações sobre quem fez toda a criação e desenvolvimento do projeto e por quem foi alterado e executado-->
+
 </body>
 </html>
