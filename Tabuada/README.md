@@ -1,6 +1,6 @@
 # Tabuada
 
-## Este é o código de uma página que mostra a múltiplicação de qualquer número digitado pelo usuário, em sequência de 1 até 10. 
+## Esta é a estrutura de um o código de uma página que mostra a múltiplicação de qualquer número digitado pelo usuário, em sequência de 1 até 10. 
 
 
 
