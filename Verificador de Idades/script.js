@@ -9,7 +9,7 @@ function verificar() {
 
    if (fano.value.length == 0 || Number(fano.value) > ano) { //Se o valor digitado for igual a 0 ou a data de nascimento for maior que a data vigente. E o termo Number() não é necessário
 
-        window.alert('{ERRO] Verifique os dados e tente novamente!')
+        window.alert('[ERRO] Verifique os dados e tente novamente!')
 
    } else {
        var fsex = document.getElementsByName('radsex') //Se eu colocasse os colchetes [], indicaria especificamente uma das opções. Se eu botasse [1] seria masculino e se eu botasse [2], seria feminino.
