@@ -8,4 +8,4 @@
 
 
 
-###### Este arquivo faz parte da lista de exercícios, sendo o [último deles](https://www.youtube.com/watch?v=vEOEZ03ZyiE&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=31) e no qual é usado functions, condições e arrays do módulo básico do curso de [JavaScript do curso em video](https://www.cursoemvideo.com/curso/javascript/). 
+###### Este arquivo faz parte da lista de exercícios, do módulo básico do curso de [JavaScript do curso em video](https://www.cursoemvideo.com/curso/javascript/). 
