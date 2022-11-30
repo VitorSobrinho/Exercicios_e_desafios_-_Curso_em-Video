@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: dimgray;
+        }
+        
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(102,102,102);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px black; 
+            /*shorthand com deslocamento horizontal, deslocamento vertical e espalhamento e alcance. Caso queira colocar o sombreamento partindo do interior da caixa, colocar a palavra inset, antes dos números ("box-shadow: inset 5px 3px 7px 1px black)*/
+            /*Aconselhável fazer uma sombra preta, com transparência, de preferência */
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 10px 10px 10px;
+            /*Forma do arredondamento da borda, podendo ter apenas 1 ou 2 parâmetros (1 parâmetro para os 4 ou 2 parâmetros para 2 lados)*/
+            box-shadow: 7px 4px 9px 0px rgba(0, 0, 0, 0.331); 
+            /*Sombreamento da caixa*/       
+        }
+
+        article {
+            background-color: lightgray;
+        
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer> p { /*Isso aqui é o CSS do rodapé, sem margem, sendo regulado pelo "padding";*/
+            margin: 0px;
+
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        } /*Bola no final do site, apenas um ensinamento de fazer um círculo no site*/
+    </style>
+
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Meu site</h1>
+        <nav> <!--Navegação-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+
+
+        </nav>
+    </header>
+    <main> <!--Menu-->
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+
+        </section>
+        <section id="notícias">
+                <article>
+                    <h2>Noticia sobre o Brasil</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nemo deleniti blanditiis sapiente? Porro ex molestias, aut a necessitatibus similique, magnam nisi voluptas vero natus suscipit, quis totam laborum quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatibus, laudantium expedita possimus provident inventore vero quae voluptas eos libero delectus ullam, explicabo odit facilis soluta. Nostrum alias mollitia illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, officia illo pariatur itaque quidem unde ipsam numquam delectus aperiam in officiis. Adipisci doloremque quaerat dolores voluptatem accusamus vitae blanditiis? Dolores.</p>
+                    <aside>
+                        <p>Artigo escrito por José da Silva</p>
+                    </aside>
+                </article>
+
+        </section>
+
+    </main>
+    <footer> <!--Rodapé-->
+        <p>Desenvolvido pelo CursoemVideo</p>
+
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
