@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+
+       @font-face {
+            font-family: 'Corn Kernels';
+            src: url(fonts/Corn\ Kernels.otf) format('opentype')
+             /*Obs.1: Forma de colocar uma fonte externa, salva no servidor, dentro do site. Caso queira colocar uma fonte do google, pode ser colocado o @import, normalmente.
+             
+             Obs.2: Dê preferência por fontes do google, já que o site fica mais leve*/ ;    
+        }
+
+        body {
+            font-family: 'Corn Kernels';
+            font-size: 16px;
+        }
+        h1, h2{
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Título 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam voluptatibus nihil aspernatur alias quae pariatur distinctio, consectetur, tempora dolor obcaecati incidunt repellendus, eligendi qui dignissimos sequi necessitatibus totam optio!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam in voluptatem soluta, libero eveniet dolores facere fugit quod consectetur inventore maxime ullam ipsa illum? Libero at unde a soluta impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam odit quo, ad sapiente unde recusandae vero cum cumque libero sit nisi quaerat deserunt praesentium voluptatum nulla dolores provident incidunt soluta!</p>
+    <h2>Título 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis accusantium expedita praesentium sapiente corporis qui laboriosam fuga voluptates eaque dicta fugit, quo quibusdam odio id tempora blanditiis doloribus vero voluptate. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum molestiae alias in excepturi provident illo id soluta eius, rerum animi sed voluptate accusamus incidunt odit nam vitae cumque magni repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur delectus, atque veritatis est aperiam nemo quam ducimus facere hic provident autem ipsum quae, officia voluptas, laboriosam in perferendis. Nulla, est.</p>
+</body>
+</html>

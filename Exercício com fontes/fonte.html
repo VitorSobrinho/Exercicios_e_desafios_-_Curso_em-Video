@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+        body{
+            font-family: 'Inconsolata', monospace ;
+            font-size: 16px;
+        }
+        h1, h2 {
+            font: italic bold 2em Arial, Helvetica, sans-serif;
+        } 
+        
+        /* Obs1. 
+        Corpo com fonte sem serifa, menos cansativo
+        Aconselhavel fazer o seguinte:
+        
+        h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        Título com fonte com serifa, para chamar mais atenção*/
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sapiente harum dolore? Asperiores quidem nihil saepe totam pariatur praesentium itaque, modi distinctio delectus accusamus omnis consequuntur numquam ipsa tempora corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laborum voluptatibus dignissimos vel facere iusto officia eum? Debitis fuga quo dolorem laboriosam, odit ipsa doloribus quis voluptatibus id adipisci dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo velit fugit aperiam nihil sit quaerat magnam nemo aliquam nesciunt, similique repudiandae perspiciatis quas expedita inventore, maxime commodi deleniti! Ullam, illum?</p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore delectus laboriosam architecto repellat praesentium recusandae laborum quaerat sit, quos provident quae alias sunt hic officiis magni impedit nihil modi quas.
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae labore, quam cumque, veniam quia enim distinctio mollitia commodi ullam dolor quas assumenda debitis nostrum nam nobis rem quisquam! Optio, nisi.</p>
+
+    
+        <!-- Obs.1 
+        Medidas Absolutas: cm, mm, in (polegada), px (pixel), pt (ponto) e pc (pica) - problema: navegadores e telas diferentes. Não tem como ter a certeza daquela medida correta.
+
+        Medidas Relativas: 
+        em (medida relativa tamanho atual da fonte), ex (medida relativa a Letra X maiúscula de uma fonte), rem (relativa a fonte do "body"), vw (% do tamanho de tela), vh (altura da view port).-->
+</body>
+</html>
